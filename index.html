@@ -1,16 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display Screenshot</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
+            padding: 20px; /* Optional: Add some padding for spacing */
+        }
+        img {
+            width: 100%; /* Make the image take up 100% of its container's width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Ensure the image doesn't create unwanted space below it */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+    </style>
 </head>
 <body>
-    <img src="Screenshot 2024-04-30 16.04.07.png" alt="Screenshot">
-    img {
-    width: 100%; /* This will make the image take up 100% of its container's width */
-    height: auto; /* This will maintain the aspect ratio of the image */
-}
-
+    <div class="container">
+        <h1>Displaying a Screenshot</h1>
+        <img src="Screenshot 2024-04-30 16.04.07.png" alt="Screenshot">
+    </div>
 </body>
 </html>
